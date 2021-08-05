@@ -1,0 +1,69 @@
+.navbar-test {
+  text-align: center;
+  font-size: 2em;
+  color: var(--secondary-color);
+  text-shadow: 0px 0px 2px black;
+  background-color: var(--primary-color);
+  height: 10vh;
+  width: 100vw;
+  box-shadow: 0px 3px 3px black;
+}
+
+.footer-test {
+
+}
+
+.TravelCard {
+  border: 1px solid red;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.info-travel-container {
+  background-image: url('../../assets/parchemin.jpg');
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+}
+
+
+.info-trajet-container {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-left: 50px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.info-trajet-info {
+  text-align: left;
+}
+
+
+.info-price {
+  width: 70vw;
+  margin: 0 auto;
+  margin-left: 10vw;
+  display: flex;
+}
+
+.list-money-accepted {
+  margin-left: 20vw;
+}
+
+.money-type-info {
+  list-style-type: none;
+  text-align: right;
+}
+
+.info-sub-container {
+  display: flex;
+  justify-content: space-around;
+}
