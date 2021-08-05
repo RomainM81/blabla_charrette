@@ -1,0 +1,33 @@
+.UserP {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.FlexContainerUP {
+    /* display: flex;
+    justify-content: flex-start;*/
+    padding-left: 40vh; 
+}
+
+.UserP h2 {
+    color : var(--primary-color);
+    text-align: center;
+    
+}
+
+.UserP h3 {
+    color : var(--primary-color)
+}
+
+.UserP p {
+    color: var(--third-color);
+}
+.UserP ul {
+    background-color: var(--bg-color);
+    list-style-type: none;
+}
+
+.ImgUS {
+    width: 35vh;
+    height: 50vh;
+}
