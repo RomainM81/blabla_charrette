@@ -13,8 +13,9 @@ function App() {
   return (
     <div>
       <Router>
+        <Navbar/>
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home/>
           </Route>
           <Route path="/travel">
