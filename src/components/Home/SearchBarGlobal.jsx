@@ -1,6 +1,5 @@
 import React from 'react';
 
-import banner from '../../assets/banner.jpg';
 import './Home.css';
 
 
@@ -13,7 +12,7 @@ const SearchBarGlobal = () => {
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
-                    <select className="choice">
+                    <select className="choiceDep">
                         <option disabled selected>Départ</option>
                         <option >Kaamelott</option>
                         <option >Versaille</option>
@@ -58,7 +57,6 @@ const SearchBarGlobal = () => {
                     </select>
                     <button className="logoSearch"><i className="fas fa-search"></i></button>
                 </div>
-                <img src={banner} alt="bannière charrette devant un château" className="banner" />
             </div>
 
         </>
