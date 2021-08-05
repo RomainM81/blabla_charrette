@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from './components/Home/Home.jsx';
+import Home from './components/Home/Home';
 import TravelCard from './components/TravelCard/TravelCard';
 //import Trajet from './components/Trajet/Trajet';
 import Navbar from './components/Navbar/Navbar';
-import UserProfil from './components/UserProfil/UserProfil.jsx';
+import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
 
@@ -14,6 +14,7 @@ function App() {
   return (
     <div>
       <Router>
+      <Navbar />
         <Switch>
           <Route exact path="/home">
             <Home/>

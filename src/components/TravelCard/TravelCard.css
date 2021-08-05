@@ -14,7 +14,6 @@
 }
 
 .TravelCard {
-  border: 1px solid red;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -22,12 +21,15 @@
   padding-top: 100px;
 }
 
+.TravelCard h3 {
+  font-size: 3rem;
+}
 
 .info-travel-container {
   background-image: url('../../assets/parchemin.jpg');
   margin: 0 auto;
   width: 80vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -59,7 +61,7 @@
 
 .info-trajet-separation {
   width: 4px;
-  height: 30vh;
+  height: 20vh;
   background-color: black;
 }
 
@@ -68,8 +70,9 @@
 }
 
 .info-trajet-adress-style {
-  margin: 20px;
+  margin: 30px;
   font-size: 1.2rem;
+  color: var(--primary-color);
 }
 
 .info-price {
@@ -81,10 +84,13 @@
 
 .info-price h3 {
   font-size: 1.8rem;
+  color: var(--primary-color);
 }
 
 .list-money-accepted {
   margin-left: 20vw;
+  color: var(--third-color);
+  font-weight: bold;
 }
 
 .list-money-accepted li {
@@ -99,4 +105,13 @@
 .info-sub-container {
   display: flex;
   justify-content: space-around;
+}
+
+.info-button-to-book {
+  color: var(--bg-color);
+  font-size: 1.3rem;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: var(--third-color);
 }
