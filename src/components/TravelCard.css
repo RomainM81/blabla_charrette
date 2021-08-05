@@ -1,0 +1,50 @@
+.navbar-test {
+  text-align: center;
+  font-size: 2em;
+  color: var(--secondary-color);
+  text-shadow: 0px 0px 2px black;
+  background-color: var(--primary-color);
+  height: 10vh;
+  width: 100vw;
+  box-shadow: 0px 3px 3px black;
+}
+
+.footer-test {
+
+}
+
+.TravelCard {
+  border: 1px solid red;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-travel-container {
+  width: 95vw;
+  border: 1px solid green;
+}
+
+.info-trajet-container {
+
+}
+
+.info-price {
+
+}
+
+.info-sub-container {
+
+}
+
+.info-transport {
+
+}
+
+.info-user {
+
+}
+
+.info-button-to-book {
+
+}
