@@ -4,8 +4,8 @@
 }
 
 .FlexContainerUP {
-    /* display: flex;
-    justify-content: flex-start;*/
+    display: flex;
+    justify-content: flex-start;
     padding-left: 40vh; 
 }
 
@@ -15,19 +15,27 @@
     
 }
 
-.UserP h3 {
-    color : var(--primary-color)
+.FlexContainerUP h3 {
+    color : var(--primary-color);
+    margin: 8px;
 }
 
-.UserP p {
+.FlexContainerUP p {
     color: var(--third-color);
+    margin: 5px;
 }
-.UserP ul {
+
+.FlexContainerUP ul {
     background-color: var(--bg-color);
     list-style-type: none;
+    margin: 2px;
 }
 
 .ImgUS {
     width: 35vh;
     height: 50vh;
+}
+
+.PayListUS {
+    display: flex;
 }
