@@ -66,9 +66,9 @@ function Trajet () {
                 <option>6 hérétiques</option>
                 <option>+ de 6 hérétiques</option>
                 </select><br/><br/>
+            </div>
                 <button onClick={(event) => setShowDetail(event.target.value)}>Confirmer</button>
                 {console.log(setShowDetail)}
-            </div>
         </div>
     </form>
     )

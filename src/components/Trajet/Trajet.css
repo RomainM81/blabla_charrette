@@ -8,16 +8,22 @@
     align-items: center;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 25%;
     height: 50vh;
-    width: 70%;
+    width: 60%;
     padding: 20px;
 }
 .formContainer img {
     width: 70%;
     height: 60%;
     margin: 0 auto;
+    padding-top: 20px;
 }
+.formItems {
+    display: flex;
+    padding: 2px;
+}
+
 
 
 
