@@ -6,33 +6,45 @@
 }
 .blocBanner {
     width:100%;
-    height: 50%;
+    height: 62vh;
     text-align: center;
-}
-.banner {
-    width: 100%;
-}
-.blocBannerSearch {
-    margin: 0 10vh;
-    border-radius:15px;
+    background-image: url(../../assets/banner.jpg);
+    background-position: center;
     padding:0;
 }
+.blocBannerSearch {
+    width: 763px;
+    border-radius:15px;
+    padding:0;
+    background-color:white;
+    display: inline-table;
+    margin-top:35px
+}
 .choice {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     border: 0;
     margin: 0;
 }
+.choiceDep {
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    border-radius: 15px 0 0 15px;
+}
 .reservationDate {
-    padding: 7px 10px;
+    padding: 14px 10px;
     border: 0;
 }
 .logoSearch {
-    padding: 11px;
+    padding: 18px;
     background-color: #BE6553;
     border: 0;
+    border-radius: 0 15px 15px 0;
+    padding-right: 25px;
 }
 .logoSearch i {
     color: white;
-    font-size:1.5vh;
+    font-size:2.4vh;
 }
