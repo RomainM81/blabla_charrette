@@ -1,12 +1,12 @@
-import Navbar from './components/Navbar';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from './components/Home/Home.jsx';
+import Navbar from './components/Navbar/Navbar';
+import UserProfil from './components/UserProfil/UserProfil.jsx';
 
 import './App.css';
 
-import UserProfil from './components/UserProfil/UserProfil.jsx';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/user-profil/:Id" >
