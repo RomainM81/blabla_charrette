@@ -1,12 +1,18 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import './App.css';
 
-import UserProfil from './components/UserProfil/UserProfil';
+import UserProfil from './components/UserProfil/UserProfil.jsx';
 
 function App() {
   return (
-    <div>
-      <UserProfil />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/user-profil/:Id" />
+        <UserProfil />
+        <Route />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
