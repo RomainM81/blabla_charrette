@@ -28,6 +28,8 @@ box-shadow: 0px 1px 1px grey;
 .Navbar .rightSide{
 padding: 10px;
 display: flex;
+align-items: center;
+margin-right: 20px;
 }
 
 .search{
@@ -43,4 +45,12 @@ display: flex;
 .user{
     display: flex;
     padding: 0 10px 0 0; 
+}
+
+.icone{
+    height: 1px;
+    width: 200%;
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-right: 5px;;
 }

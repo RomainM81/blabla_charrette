@@ -13,16 +13,16 @@ const Navbar = () => {
             </div>
             <div className="rightSide">
                 <div className="search">
-                    <label for="Utilisateur">&#128270;</label>
-                    <input type="text" placeholder="Rechercher" />
+                    <label className="icone" for="recherche">&#128270;</label>
+                    <input id="recherche" type="text" placeholder="Rechercher" />
 
                     {/* <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" />
                     <input type="text" placeholder="Search..." /> */}
                 </div>
 
                 <div className="traject">
-                    <label for="Utilisateur">&#8853;</label>
-                    <input type="text" type="button" value="Publier un trajet" />
+                    <label className="icone" for="utilisateur">&#8853;</label>
+                    <input id="utilisateur" type="text" type="button" value="Publier un trajet" />
 
                     {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" />
                     <button>Publier un trajet</button> */}
