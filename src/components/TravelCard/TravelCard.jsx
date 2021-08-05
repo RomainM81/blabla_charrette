@@ -241,23 +241,21 @@ const TravelCard = () => {
       <h3>7 août</h3>
 
       <div className='info-travel-container'>
-        {/* <div className='bg-image'>
-          <img src='../assets/parchemin.jpg' alt="ta soeur" />
-        </div> */}
+
         <div className='info-trajet-container'>
 
           <div className='info-trajet-info'>
 
-            <div className='info-trajet-time-departure'>
+            <div className='info-trajet-time-departure info-trajet-time-style'>
               {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
             </div>
 
-            <div className='info-trajet-time-delay'>
+            <div className='info-trajet-time-delay info-trajet-time-style'>
               {randomTravelNumber && durationCalculator(dataTravelTest[randomTravelNumber -1].distance)}
-              Durée du trajet : {Math.floor(travelDuration / 60)} heure(s)
+              Durée : {Math.floor(travelDuration / 60)} heure(s)
             </div>
 
-            <div className='info-trajet-time-arrival'>
+            <div className='info-trajet-time-arrival info-trajet-time-style'>
                 {randomTravelNumber && arrivalCalculator(travelDuration)}
             </div>
 
