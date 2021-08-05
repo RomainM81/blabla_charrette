@@ -15,9 +15,10 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route  exact path="/">
             <Home />
           </Route>
+          <Route path="/post_trajet" component={Trajet} />
           <Route>
           </Route>
           <Route>
