@@ -239,61 +239,92 @@ const TravelCard = () => {
     </div>
     <div className='TravelCard'>
       <h3>7 août</h3>
+
       <div className='info-travel-container'>
+        {/* <div className='bg-image'>
+          <img src='../assets/parchemin.jpg' alt="ta soeur" />
+        </div> */}
         <div className='info-trajet-container'>
-          <h2>ID : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].id}</h2>
-          <div className='info-trajet-time'>
-            <img src={backgroundImage} alt='background-image' className='bg-image' />
+
+          <div className='info-trajet-info'>
+
             <div className='info-trajet-time-departure'>
               {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
             </div>
+
             <div className='info-trajet-time-delay'>
               {randomTravelNumber && durationCalculator(dataTravelTest[randomTravelNumber -1].distance)}
               Durée du trajet : {Math.floor(travelDuration / 60)} heure(s)
             </div>
+
             <div className='info-trajet-time-arrival'>
                 {randomTravelNumber && arrivalCalculator(travelDuration)}
             </div>
+
           </div>
+
           <div className='info-trajet-separation'>
+
           </div>
+
           <div className='info-trajet-adress'>
+
             <div className='info-trajet-adress-departure info-trajet-adress-style'>
               Départ : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromAdress}
               <br/> {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromTown}
             </div>
+
             <div className='info-trajet-adress-arrival info-trajet-adress-style'>
               Arrivée: {randomTravelNumber && dataTravelTest[randomTravelNumber -1].toAdress}
               <br />{randomTravelNumber && dataTravelTest[randomTravelNumber -1].toTown}
             </div>
+
           </div>
+
         </div>
+
         <div className='info-price'>
-          <h3>Tarif : <ul>{randomTravelNumber && dataTravelTest[randomTravelNumber -1].prices.map((priceItem, index) => 
+
+          <h3>Tarif pour X voyageur :</h3>
+          <div className='list-money-accepted'>
+            <ul className='money-type-info'>{randomTravelNumber && dataTravelTest[randomTravelNumber -1].prices.map((priceItem, index) => 
             (priceItem.acceptance && <li key={index}>{priceItem.price + ' ' + priceItem.type}</li>))}
             </ul>
-            </h3>
+          </div>
+
         </div>
+
         <div className='info-sub-container'>
+
           <div className='info-transport'>
           <h4>Moyen de transport :</h4>
             {dataProfilTest.transportType}
           </div>
+
           <div className='info-user'>
+
             <div className='info-user-photo'>
               {dataProfilTest.pictures}
             </div>
+
             <div className='info-user-name'>
             {dataProfilTest.name}
             </div>
+
             <div className='info-user-hygiene'>
             {`Dernier bain : < ${dataProfilTest.hygiene} mois`}
             </div>
+
           </div>
+
         </div>
+
         <button className='info-button-to-book'>Réserver</button>
+
       </div>
+
     </div>
+
     <div className='footer-test'>
     </div>
   </>

@@ -8,20 +8,20 @@ import TravelCard from './components/TravelCard';
 
 function App() {
   return (
-    <Router>
-      <div>
-      <TravelCard />
+    <div>
+      <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/home">
             <Home/>
           </Route>
-          <Route>
+          <Route path="/travel">
+            <TravelCard />
           </Route>
           <Route>
           </Route>
         </Switch>
-      </div>
     </Router>
+    </div>
   );
 }
 
