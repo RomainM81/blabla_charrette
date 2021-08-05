@@ -1,11 +1,27 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+import Home from './components/Home/Home.jsx';
+
 import './App.css';
 import TravelCard from './components/TravelCard';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div>
       <TravelCard />
-    </div>
+        <Switch>
+          <Route path="/">
+            <Home/>
+          </Route>
+          <Route>
+          </Route>
+          <Route>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
