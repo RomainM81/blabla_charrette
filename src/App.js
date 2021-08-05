@@ -1,10 +1,5 @@
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
-import Trajet from "./components/Trajet/Trajet";
-import Navbar from './components/Navbar';
-
 import React from 'react';
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from './components/Home/Home.jsx';
 import TravelCard from './components/TravelCard/TravelCard';
@@ -18,9 +13,10 @@ function App() {
   return (
     <div>
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/home">
-            <Home/>
+            <Home />
           </Route>
           <Route path="/travel">
             <TravelCard />
@@ -29,7 +25,7 @@ function App() {
             <UserProfil />
           </Route>
         </Switch>
-    </Router>
+      </Router>
     </div>
   );
 }
