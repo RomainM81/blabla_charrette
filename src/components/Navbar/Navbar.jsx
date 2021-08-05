@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import Logo from '../../assets/logo.png';
 
 import './Navbar.css';
@@ -5,13 +7,12 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className="Navbar">
+
             <div className="leftSide">
-
-                <img src={Logo} alt="Logo" />
-
-                <h1>BlablaCharrette</h1>
-
+                <NavLink to="/home"><img src={Logo} alt="Logo" /></NavLink>
+                <NavLink to="/home"><h1>BlablaCharrette</h1></NavLink>
             </div>
+
             <div className="rightSide">
                 <div className="search">
                     <label className="icone" for="recherche">&#128270;</label>

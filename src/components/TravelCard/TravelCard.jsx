@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import './TravelCard.css'
-import backgroundImage from '../../assets/parchemin.jpg'
 
 const TravelCard = () => {
 
@@ -233,32 +232,26 @@ const TravelCard = () => {
 
 
   return (
-    <>
-    <div className='navbar-test'>
-      BlaBlaCharrette
-    </div>
     <div className='TravelCard'>
       <h3>7 août</h3>
 
       <div className='info-travel-container'>
-        {/* <div className='bg-image'>
-          <img src='../assets/parchemin.jpg' alt="ta soeur" />
-        </div> */}
+
         <div className='info-trajet-container'>
 
           <div className='info-trajet-info'>
 
-            <div className='info-trajet-time-departure'>
-              {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
+            <div className='info-trajet-time-departure info-trajet-time-style'>
+            <i class="fas fa-plane-departure"></i> {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
             </div>
 
-            <div className='info-trajet-time-delay'>
+            <div className='info-trajet-time-delay info-trajet-time-style'>
               {randomTravelNumber && durationCalculator(dataTravelTest[randomTravelNumber -1].distance)}
-              Durée du trajet : {Math.floor(travelDuration / 60)} heure(s)
+              <i class="far fa-clock"></i> {Math.floor(travelDuration / 60)} heure(s)
             </div>
 
-            <div className='info-trajet-time-arrival'>
-                {randomTravelNumber && arrivalCalculator(travelDuration)}
+            <div className='info-trajet-time-arrival info-trajet-time-style'>
+            <i class="fas fa-plane-arrival"></i> {randomTravelNumber && arrivalCalculator(travelDuration)}
             </div>
 
           </div>
@@ -312,22 +305,18 @@ const TravelCard = () => {
             </div>
 
             <div className='info-user-hygiene'>
-            {`Dernier bain : < ${dataProfilTest.hygiene} mois`}
+              {dataProfilTest.hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>Dernier bain il y a ${dataProfilTest.hygiene} mois</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>Dernier bain il y a ${dataProfilTest.hygiene} mois</p></>}
             </div>
 
           </div>
 
         </div>
-
-        <button className='info-button-to-book'>Réserver</button>
-
+        <div>
+          <button className='info-button-to-book'>Réserver</button>
+        </div>
       </div>
 
     </div>
-
-    <div className='footer-test'>
-    </div>
-  </>
   )
 }
 
