@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import Home from './components/Home/Home.jsx';
+import TravelCard from './components/TravelCard/TravelCard';
 
 import './App.css';
-import TravelCard from './components/TravelCard';
+
 
 function App() {
   return (

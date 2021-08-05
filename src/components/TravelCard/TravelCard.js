@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './TravelCard.css'
-import backgroundImage from '../assets/parchemin.jpg'
+import backgroundImage from '../../assets/parchemin.jpg'
 
 const TravelCard = () => {
 
