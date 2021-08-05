@@ -1,0 +1,23 @@
+.formContainer {
+    height: 170vh;
+    display: flex;
+    
+}
+
+.formContent {
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    height: 50vh;
+    width: 70%;
+    padding: 20px;
+}
+.formContainer img {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+
+
