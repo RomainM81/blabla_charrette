@@ -14,19 +14,60 @@
 }
 
 .TravelCard {
+ 
   border: 1px solid red;
   width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
+  padding-top: 100px;
 }
 
 .info-travel-container {
-  width: 95vw;
-  border: 1px solid green;
+  margin: 50px auto;
+  width: 60vw;
 }
 
 .info-trajet-container {
+  
+}
 
+.info-trajet-time {
+  position: absolute;
+  height: 50vh;
+  /* height: 80vh; */
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  width: 70vw;
+  height: 100vh;
+}
+
+.info-trajet-time-departure, .info-trajet-time-delay, .info-trajet-time-arrival {
+  /* margin-left: 20vw; */
+  padding-left: 5vw;
+}
+
+.info-trajet-adress {
+  position: absolute;
+  left: 43vw;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.info-trajet-adress-style{
+  text-align: left;
+  margin: 20px;
 }
 
 .info-price {

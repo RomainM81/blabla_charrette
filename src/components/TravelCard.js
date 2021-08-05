@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './TravelCard.css'
+import backgroundImage from '../assets/parchemin.jpg'
 
 const TravelCard = () => {
 
@@ -12,7 +13,7 @@ const TravelCard = () => {
     pictures: '...',
     class: 'paysan',
     hygiene: 6,
-    transport: 'charrette',
+    transportType: 'charrette',
     age: 33,
     sexe: 'homme',
     payment: [
@@ -33,8 +34,10 @@ const TravelCard = () => {
   const dataTravelTest = [
     {
       id:1,
-      from: 'Kaamelott',
-      to: 'Fort Boyard',
+      fromAdress: '3 rue de la fessière de la reine, Kaamelott',
+      fromTown: 'Kaamelott',
+      toAdress: 'Auberge du Père Fourasse, Fort Boyard',
+      toTown: 'Fort Boyard',
       transportType: 'pieds',
       departure: 9,
       distance: 47,
@@ -88,8 +91,10 @@ const TravelCard = () => {
     },
     {
       id:2,
-      from: 'Versaille',
-      to: 'Montmirail',
+      fromAdress: '43 allée de la gambas, Versaille',
+      fromTown: 'Versaille',
+      toAdress: 'Place du gueux cuiré, Montmiral',
+      toTown: 'Montmirail',
       transportType: 'cheval',
       departure: 11,
       distance: 12,
@@ -143,8 +148,10 @@ const TravelCard = () => {
     },
     {
       id:3,
-      from: 'Carmelid',
-      to: 'Kaamelott',
+      fromAdress: 'Boulevard Dame Beatrice la pouffiasse, Carmelid',
+      fromTown: 'Carmelid',
+      toAdress: '3 rue de la fessière de la reine, Kaamelott',
+      toTown: 'Kaamelott',
       transportType: 'carosse',
       departure: 14,
       distance: 21,
@@ -216,23 +223,17 @@ const TravelCard = () => {
   }
 
   const arrivalCalculator = (duration) => {
-    console.log(`duration : ${duration}`)
     let minutes = duration % 60
-    let hours = duration / 60
-    console.log(`heures : ${hours} et minutes : ${minutes}`)
-    let arrivalTime = `${hours}h${minutes}`
+    let hours = Math.floor(duration / 60)
+    let days = hours >= 24 ? Math.floor(hours / 24) : 0
+    let hoursRest = days ? hours % 24 : hours
+    let arrivalTime = `(+${days}j) ${hoursRest}:${minutes}`
    return arrivalTime
-  }
-
-  const hoursConvertor = (minutes) => {
-    let result = Math.floor(minutes / 60)
-    return result
   }
 
 
   return (
     <>
-    {console.log(travelDuration)}
     <div className='navbar-test'>
       BlaBlaCharrette
     </div>
@@ -242,26 +243,30 @@ const TravelCard = () => {
         <div className='info-trajet-container'>
           <h2>ID : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].id}</h2>
           <div className='info-trajet-time'>
+            <img src={backgroundImage} alt='background-image' className='bg-image' />
             <div className='info-trajet-time-departure'>
-              Départ : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}h
-            </div>
-          <div className='info-trajet-time-arrival'>
-              Arrivée : {arrivalCalculator(travelDuration)}
+              {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
             </div>
             <div className='info-trajet-time-delay'>
               {randomTravelNumber && durationCalculator(dataTravelTest[randomTravelNumber -1].distance)}
               Durée du trajet : {Math.floor(travelDuration / 60)} heure(s)
-              </div>
+            </div>
+            <div className='info-trajet-time-arrival'>
+                {randomTravelNumber && arrivalCalculator(travelDuration)}
+            </div>
           </div>
           <div className='info-trajet-separation'>
           </div>
           <div className='info-trajet-adress'>
-
+            <div className='info-trajet-adress-departure info-trajet-adress-style'>
+              Départ : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromAdress}
+              <br/> {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromTown}
+            </div>
+            <div className='info-trajet-adress-arrival info-trajet-adress-style'>
+              Arrivée: {randomTravelNumber && dataTravelTest[randomTravelNumber -1].toAdress}
+              <br />{randomTravelNumber && dataTravelTest[randomTravelNumber -1].toTown}
+            </div>
           </div>
-          <ul>
-            <li>Départ : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].from}</li>
-            <li>Arrivé : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].to}</li>
-          </ul>
         </div>
         <div className='info-price'>
           <h3>Tarif : <ul>{randomTravelNumber && dataTravelTest[randomTravelNumber -1].prices.map((priceItem, index) => 
@@ -271,10 +276,19 @@ const TravelCard = () => {
         </div>
         <div className='info-sub-container'>
           <div className='info-transport'>
-
+          <h4>Moyen de transport :</h4>
+            {dataProfilTest.transportType}
           </div>
           <div className='info-user'>
-
+            <div className='info-user-photo'>
+              {dataProfilTest.pictures}
+            </div>
+            <div className='info-user-name'>
+            {dataProfilTest.name}
+            </div>
+            <div className='info-user-hygiene'>
+            {`Dernier bain : < ${dataProfilTest.hygiene} mois`}
+            </div>
           </div>
         </div>
         <button className='info-button-to-book'>Réserver</button>
