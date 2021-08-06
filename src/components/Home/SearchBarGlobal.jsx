@@ -83,8 +83,8 @@ const SearchBarGlobal = () => {
                     </NavLink>
                 </div>
             </div>
-            <h2 className="slogan" >BlablaCharrette aucun lieu de vous arrête !</h2>
-            <div className="color-change-2x"></div>
+                <h2 className="slogan" >BlablaCharrette aucun lieu ne vous arrête !</h2>
+                <div className="color-change-2x"></div>
         </>
     );
 }
