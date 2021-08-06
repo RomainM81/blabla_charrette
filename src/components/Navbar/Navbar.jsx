@@ -7,11 +7,11 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className="Navbar">
-              <div className="leftSide">
-              <NavLink to="/home"><img src={Logo} alt="Logo" /></NavLink>
-                <NavLink to="/home"><h1>BlablaCharrette</h1></NavLink>
-              </div>
-            
+            <div className="leftSide">
+                <NavLink to="/"><img src={Logo} alt="Logo" /></NavLink>
+                <NavLink to="/"><h1>BlablaCharrette</h1></NavLink>
+            </div>
+
             <div className="rightSide">
                 <div className="search">
                     <label className="icone" for="recherche">&#128270;</label>
@@ -24,6 +24,7 @@ const Navbar = () => {
                 <div className="traject">
                     <label className="icone" for="utilisateur">&#8853;</label>
                     <input id="utilisateur" type="text" type="button" value="Publier un trajet" />
+                    {/* <NavLink to="/travel"></NavLink> */}
 
                     {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" />
                     <button>Publier un trajet</button> */}
