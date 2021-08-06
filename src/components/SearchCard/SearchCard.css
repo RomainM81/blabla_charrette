@@ -2,7 +2,7 @@
   width: 60vw;
   height: 10vh;
   margin: 20px;
-  background-color: blueviolet;
+  background: url('../../assets/parchemin2.jpg') center / cover;
   border-radius: 5px;
   box-shadow: 0px 0px 3px black;
 }

@@ -1,6 +1,6 @@
 import SearchCard from "../SearchCard/SearchCard"
 
-const SearchResult = () => {
+const SearchResult = (props) => {
   
   const tabTest = [
     {name:'prout1'},
@@ -12,6 +12,8 @@ const SearchResult = () => {
   return (
     <div className="SearchResult">
       <h2>Resultats de votre recherche :</h2>
+      <h4>{props.date}</h4>
+      <p>{props.departure} <i class="fas fa-arrow-right"></i> {props.arrival}</p>
       {tabTest.map((element) => <SearchCard name={element.name} />)}
       
     </div>
