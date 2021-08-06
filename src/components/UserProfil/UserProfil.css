@@ -1,0 +1,53 @@
+body {
+    background-color: var(--bg-color);
+}
+.UserP {
+    background: #97391c;
+    width: 60vw;
+    margin: 2% auto;
+    border: 5px solid var(--secondary-color);
+}
+
+.FlexContainerUP {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8% 10%;
+}
+
+.FlexContainerBlocText {
+    padding: 5%;
+}
+
+.FlexContainerBlocText h3 {
+    color : var(--secondary-color);
+    margin: 10px;
+}
+
+.UserP h2 {
+    color : var(--secondary-color);
+    text-align: center;
+    font-size: 40px;
+}
+
+.FlexContainerUP p {
+    color: var(--third-color);
+}
+
+.FlexContainerBlocText ul {
+    background-color: var(--bg-color);
+    list-style-type: none;
+}
+
+.ImgUS {
+    width: 35vh;
+    height: 50vh;
+    border: 5px solid var(--secondary-color);
+}
+
+.PayListUS {
+    display: flex;
+    width: 350px;
+}
+.PayListUS2 {
+    margin: 0 0 0 80px;
+}

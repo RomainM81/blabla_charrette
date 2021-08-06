@@ -1,0 +1,135 @@
+.TravelCard {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.TravelCard h3 {
+  font-size: 3rem;
+}
+
+.info-travel-container {
+  background-image: url('../../assets/parchemin.jpg');
+  margin: 0 auto;
+  width: 80vw;
+  min-height: 100vh;
+}
+
+.info-trajet-container {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-left: 50px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  
+}
+
+.info-trajet-info {
+  text-align: left;
+}
+
+.info-trajet-time-style {
+  margin: 15px;
+}
+
+.info-trajet-time-delay {
+  text-align: right;
+  font-size: 1.1rem;
+  margin-left: 60px;
+}
+
+.info-trajet-separation {
+  width: 4px;
+  height: 20vh;
+  background-color: black;
+}
+
+.info-trajet-adress {
+  margin-left: 30px;
+}
+
+.info-trajet-adress-style {
+  margin: 30px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.info-price {
+  width: 70vw;
+  margin: 0 auto;
+  margin-left: 10vw;
+  display: flex;
+}
+
+.info-price h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.list-money-accepted {
+  margin-left: 20vw;
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.list-money-accepted li {
+  margin: 15px;
+}
+
+.money-type-info {
+  list-style-type: none;
+  text-align: right;
+}
+
+.info-sub-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-transport {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.info-transport p {
+  color: var(--third-color);
+}
+
+.info-user {
+  color: var(--primary-color);
+}
+
+.info-user-photo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.info-user-photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.info-user-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.info-user-hygiene p {
+  font-weight: bold;
+  color: var(--third-color);
+}
+
+.info-button-to-book {
+  color: var(--bg-color);
+  font-size: 1.3rem;
+  height: 51px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: var(--third-color);
+}

@@ -1,0 +1,65 @@
+.SearchCardLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.SearchCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60vw;
+  min-height: 25vh;
+  margin: 20px;
+  padding: 20px;
+  background: url('../../assets/parchemin2.jpg') center / cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.SearchCard .info-trajet-infofo {
+  display: flex;
+  flex-direction: row;
+}
+
+.SearchCard .info-trajet-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.SearchCard .info-trajet-time-info {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+
+.SearchCard .info-trajet-adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.SearchCard .info-user-info {
+  display: flex;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.SearchCard .info-user-info img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.SearchCard .info-user-info h5 {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  margin-top: 12px;
+}
+
+.SearchCard .info-tarif-infofo {
+  font-size: 1.8rem;
+}
+
+.SearchCard .info-tarif-infofofo h6{
+  font-size: 1.1rem;
+}

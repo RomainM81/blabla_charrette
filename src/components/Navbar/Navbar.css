@@ -1,0 +1,75 @@
+.Navbar {
+  
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  box-shadow: 0px 1px 1px grey;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.Navbar .leftSide h1{
+    font-size: 100%;
+}
+
+.Navbar .leftSide img{
+    width: 120px;
+	height: 50px;
+    padding: 2%;
+}
+
+
+.Navbar .leftSide{
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.Navbar .rightSide{
+padding: 10px;
+display: flex;
+align-items: center;
+margin-right: 20px;
+}
+
+.NavL {
+  text-decoration: none;
+  color: black;
+}
+
+.search{
+    display: flex;
+    padding: 0 10px 0 0;
+}
+
+
+.user{
+    display: flex;
+    padding: 0 10px 0 0; 
+}
+
+.icone{
+    height: 1px;
+    width: 200%;
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-right: 5px;;
+}
+
+.traject input{
+    display: flex;
+    padding: 0px 5px;
+    width: 10em;
+    height: 31px;
+}
+
+.traject .value{
+height: 10px;
+}
+
