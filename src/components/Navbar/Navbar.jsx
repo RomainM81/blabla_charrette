@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import Logo from '../../assets/logo.png';
 
@@ -22,9 +22,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="traject">
-                    <label className="icone" for="utilisateur">&#8853;</label>
-                    <input id="utilisateur" type="text" type="button" value="Publier un trajet" />
-                    {/* <NavLink to="/travel"></NavLink> */}
+                    <Link to="/post-trajet">
+                        <input id="utilisateur" type="text" type="button" value="&#8853; Publier un trajet" />
+                    </Link>
 
                     {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" />
                     <button>Publier un trajet</button> */}
