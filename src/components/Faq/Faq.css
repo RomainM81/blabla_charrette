@@ -1,0 +1,16 @@
+.bloc {
+    text-align: center;
+    margin: 0 30vh;
+}
+.titleFaq {
+    text-align: center;
+    padding:0;
+    margin: 25px auto;
+    color:var(--secondary-color);
+    font-size:35px;
+    background-color:#97391c;
+}
+.blocFaq {
+    margin: 10vh 30vh;
+    text-align:justify
+}

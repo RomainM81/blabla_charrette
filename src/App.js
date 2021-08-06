@@ -6,6 +6,7 @@ import TravelCard from './components/TravelCard/TravelCard';
 //import Trajet from './components/Trajet/Trajet';
 import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
+import Faq from './components/Faq/Faq';
 
 import './App.css';
 import SearchResult from "./components/SearchResult/SearchResult";
@@ -27,6 +28,9 @@ function App() {
             <UserProfil />
           </Route>
           <Route path="/search-result" component={SearchResult} />
+          <Route path="/faq">
+            <Faq />
+          </Route>
         </Switch>
     </Router>
     </div>
