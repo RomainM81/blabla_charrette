@@ -25,7 +25,7 @@ function App() {
           <Route path="/travel">
             <TravelCard />
           </Route>
-          {/* <Route path="/post-trajet" component={Trajet} /> */}
+          <Route path="/post-trajet" component={Trajet} />
           <Route path="/user-profil/:Id" >
             <UserProfil />
           </Route>
