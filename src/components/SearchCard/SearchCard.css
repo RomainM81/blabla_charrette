@@ -7,3 +7,8 @@
   border-radius: 5px;
   box-shadow: 0px 0px 5px black;
 }
+
+.SearchCard a {
+  color: var(--primary-color);
+  text-decoration: none;
+}

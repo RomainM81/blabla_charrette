@@ -1,4 +1,5 @@
 import Perceval from '../../assets/Perceval.png'
+import Karadoc from '../../assets/Karadoc.png'
 
 const Data = [
     {
@@ -25,10 +26,10 @@ const Data = [
     },
     {
         id: 2,
-        name:"Caradoc",
-        picture:"",
+        name:"Karadoc",
+        picture:Karadoc,
         class:"Chevalier",
-        hygiene:"",
+        hygiene:"Plus que douteux",
         transport:"Cheval",
         age:"41",
         sexe:"Homme",

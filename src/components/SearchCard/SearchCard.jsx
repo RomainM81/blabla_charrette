@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './SearchCard.css'
 
 const SearchCard = (props) => {
@@ -27,28 +28,33 @@ const SearchCard = (props) => {
     travelDistanceChoice = result
   }
 
+  console.log(props)
+  console.log(props.fromTown)
+
+
   return (
-    <div className="SearchCard">
-      <div className='info-trajet-info'>
+    <NavLink to={`/travel/${props.id}/${props.location.state.date}/${props.location.state.nombre}`}>
+      <div className="SearchCard">
+        <h4>ID: {props.id}</h4>
+        <div className='info-trajet-info'>
 
-        <div className='info-trajet-time-departure info-trajet-time-style'>
-          <i class="fas fa-plane-departure"></i> {props.depart}:00
+          <div className='info-trajet-time-departure info-trajet-time-style'>
+            <i class="fas fa-plane-departure"></i> {props.departure}:00
+          </div>
+
+          <div className='info-trajet-time-delay info-trajet-time-style'>
+            {getTravelDistance()}
+            {durationCalculator(travelDistanceChoice)}
+            <i class="far fa-clock"></i> {Math.floor(travelDuration / 60)} heure(s)
+          </div>
+
+          <div className='info-trajet-time-arrival info-trajet-time-style'>
+            <i class="fas fa-plane-arrival"></i> {arrivalCalculator(travelDuration)}
+          </div>
+
         </div>
-
-        <div className='info-trajet-time-delay info-trajet-time-style'>
-          {getTravelDistance()}
-          {durationCalculator(travelDistanceChoice)}
-          <i class="far fa-clock"></i> {Math.floor(travelDuration / 60)} heure(s)
-        </div>
-
-        <div className='info-trajet-time-arrival info-trajet-time-style'>
-          <i class="fas fa-plane-arrival"></i> {arrivalCalculator(travelDuration)}
-        </div>
-
       </div>
-
-
-    </div>
+    </NavLink>
   )
 }
 
