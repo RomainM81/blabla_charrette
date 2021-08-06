@@ -6,6 +6,11 @@ display: flex;
 box-shadow: 0px 1px 1px grey;
 }
 
+.Navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 .Navbar .leftSide h1{
     font-size: 100%;
 }
