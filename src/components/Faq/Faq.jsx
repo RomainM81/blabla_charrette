@@ -6,7 +6,7 @@ const Faq = () => {
     return (
         <div>
             <div className="bloc">
-                <h2 className="titleFaq">Peste noire : la foires aux questions</h2>
+                <h2 className="titleFaq">Peste noire : la foire aux questions</h2>
                 <img src={merlin} alt="merlin" />
             </div>
             <div className="blocFaq">
@@ -25,7 +25,7 @@ const Faq = () => {
                     sont délivrés très tôt, car le délai d’incubation de la maladie est généralement rapide. </p>
                 </div>
                 <div>
-                    <h3>Quels sont les types de peste ?</h3>
+                    <h3>Quels sont les types de pestes ?</h3>
                     <p>Il y a trois formes de peste, selon l’itinéraire de l’infection : bubonique, septicémique et
                     pulmonaire. Toutes les formes sont guérissables si elles sont détectées à temps.</p>
                     <p><i class="em em-rotating_light"></i> <strong>La peste bubonique</strong> (connue en Europe médiévale comme la « Peste Noire ») est la forme la
