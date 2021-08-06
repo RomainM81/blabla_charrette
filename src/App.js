@@ -8,8 +8,6 @@ import TravelCard from './components/TravelCard/TravelCard';
 import Trajet from './components/Trajet/Trajet';
 import Navbar from './components/Navbar/Navbar';
 import SearchResult from "./components/SearchResult/SearchResult";
-import Trajet from "./components/Trajet/Trajet";
-import TravelCard from './components/TravelCard/TravelCard';
 import UserProfil from './components/UserProfil/UserProfil';
 import Faq from './components/Faq/Faq';
 
