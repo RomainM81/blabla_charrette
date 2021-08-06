@@ -71,14 +71,14 @@ const SearchBarGlobal = () => {
                         <option >4 bouseux</option>
                         <option >5 pignoufs</option>
                         <option >6 hérétiques</option>
-                        <option >+ de 6 hérétiques</option>
+                        <option >+ de 6 mécréants</option>
                     </select>
                     <Link to={{pathname:'/search-result', state: state}} className="NavL">
                         <button className="logoSearch"><i className="fas fa-search"></i></button>
                     </Link>
                 </div>
             </div>
-                <h2 className="slogan" >BlablaCharrette, aucun lieu ne vous arrête !</h2>
+                <h2 className="slogan" >BlablaCharrette, aucun lieu ne vous arrête (et pas de poisson)!</h2>
                 <div className="color-change-2x"></div>
         </>
     );

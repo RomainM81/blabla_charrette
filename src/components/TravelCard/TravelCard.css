@@ -128,7 +128,7 @@
 .info-button-to-book {
   color: var(--bg-color);
   font-size: 1.3rem;
-  padding: 10px;
+  height: 51px;
   margin-bottom: 30px;
   border-radius: 10px;
   background-color: var(--third-color);
