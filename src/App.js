@@ -3,7 +3,7 @@ import React from 'react';
 
 import Home from './components/Home/Home';
 import TravelCard from './components/TravelCard/TravelCard';
-//import Trajet from './components/Trajet/Trajet';
+import Trajet from './components/Trajet/Trajet';
 import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/travel">
             <TravelCard />
           </Route>
-          {/* <Route path="/post-trajet" component={Trajet} /> */}
+          <Route path="/post-trajet" component={Trajet} />
           <Route path="/user-profil/:Id" >
             <UserProfil />
           </Route>

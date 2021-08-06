@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 import './Home.css';
 
@@ -18,10 +18,6 @@ const SearchBarGlobal = () => {
         setState({ ...state, [e.target.name]: e.target.value });
     }
 
-    const handleClick = () => {
-
-    }
-    console.log(state)
 
     return (
         <>
