@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
-
+import SearchResult from "./components/SearchResult/SearchResult";
 
 function App() {
   return (
@@ -29,6 +29,10 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/search-result" component={SearchResult} />
+          <Route path="/faq">
+            <Faq />
           </Route>
         </Switch>
       </Router>
