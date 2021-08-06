@@ -1,8 +1,4 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-<<<<<<< HEAD
-
-=======
->>>>>>> d0180848de9433b6be3010e3fcbf72c44f7a31dd
 import React from 'react';
 
 import Home from './components/Home/Home';
