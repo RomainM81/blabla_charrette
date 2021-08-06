@@ -1,24 +1,10 @@
-.navbar-test {
-  text-align: center;
-  font-size: 2em;
-  color: var(--secondary-color);
-  text-shadow: 0px 0px 2px black;
-  background-color: var(--primary-color);
-  height: 10vh;
-  width: 100vw;
-  box-shadow: 0px 3px 3px black;
-}
-
-.footer-test {
-
-}
-
 .TravelCard {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
+  background-color: white;
 }
 
 .TravelCard h3 {
@@ -31,7 +17,6 @@
   width: 80vw;
   min-height: 100vh;
 }
-
 
 .info-trajet-container {
   font-size: 1.5em;
@@ -122,6 +107,7 @@
 
 .info-user-photo {
   width: 150px;
+  margin: 0 auto;
 }
 
 .info-user-photo img {
@@ -135,6 +121,7 @@
 }
 
 .info-user-hygiene p {
+  font-weight: bold;
   color: var(--third-color);
 }
 
