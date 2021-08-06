@@ -2,6 +2,7 @@ const DataJourney = [
     {
       id:1,
       fromAdress: '3 rue de la fessière de la reine, Kaamelott',
+      fromTown: 'Kaamelott',
       toAdress: 'Auberge du Père Fourasse, Fort Boyard',
       transportType: 'pieds',
       departure: 9,
@@ -57,6 +58,7 @@ const DataJourney = [
     {
       id:2,
       fromAdress: '43 allée de la gambas, Versaille',
+      fromTown: 'Versaille',
       toAdress: 'Place du gueux cuiré, Montmirail',
       transportType:'cheval',
       departure: 11,
@@ -112,6 +114,7 @@ const DataJourney = [
     {
       id:3,
       fromAdress: 'Boulevard Dame Beatrice la pouffiasse, Carmelid',
+      fromTown: 'Carmelid',
       toAdress: '3 rue de la fessière de la reine, Kaamelott',
       transportType: 'carosse',
       departure: 14,

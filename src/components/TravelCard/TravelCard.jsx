@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './TravelCard.css'
 import DataUser from '../Data/Data'
+import DataJourney from '../Data/DataJourney'
 
 const TravelCard = () => {
 
@@ -31,7 +32,7 @@ const TravelCard = () => {
     ]
   }
 
-  const dataTravelTest = [
+  const DataTest = [
     {
       id:1,
       fromAdress: '3 rue de la fessière de la reine, Kaamelott',
@@ -210,7 +211,7 @@ const TravelCard = () => {
 
   useEffect(() => {
     const getTravel = () => {
-      let randomTravel = Math.floor(Math.random() * dataTravelTest.length +1);
+      let randomTravel = Math.floor(Math.random() * DataJourney.length +1);
       setRandomTravelNumber(randomTravel)
     }
     getTravel()
@@ -244,11 +245,11 @@ const TravelCard = () => {
           <div className='info-trajet-info'>
 
             <div className='info-trajet-time-departure info-trajet-time-style'>
-            <i class="fas fa-plane-departure"></i> {randomTravelNumber && dataTravelTest[randomTravelNumber -1].departure}:00
+            <i class="fas fa-plane-departure"></i> {randomTravelNumber && DataJourney[randomTravelNumber -1].departure}:00
             </div>
 
             <div className='info-trajet-time-delay info-trajet-time-style'>
-              {randomTravelNumber && durationCalculator(dataTravelTest[randomTravelNumber -1].distance)}
+              {randomTravelNumber && durationCalculator(DataJourney[randomTravelNumber -1].distance)}
               <i class="far fa-clock"></i> {Math.floor(travelDuration / 60)} heure(s)
             </div>
 
@@ -265,13 +266,13 @@ const TravelCard = () => {
           <div className='info-trajet-adress'>
 
             <div className='info-trajet-adress-departure info-trajet-adress-style'>
-              Départ : {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromAdress}
-              <br/> {randomTravelNumber && dataTravelTest[randomTravelNumber -1].fromTown}
+              Départ : {randomTravelNumber && DataTest[randomTravelNumber -1].fromAdress}
+              <br/> {randomTravelNumber && DataTest[randomTravelNumber -1].fromTown}
             </div>
 
             <div className='info-trajet-adress-arrival info-trajet-adress-style'>
-              Arrivée: {randomTravelNumber && dataTravelTest[randomTravelNumber -1].toAdress}
-              <br />{randomTravelNumber && dataTravelTest[randomTravelNumber -1].toTown}
+              Arrivée: {randomTravelNumber && DataTest[randomTravelNumber -1].toAdress}
+              <br />{randomTravelNumber && DataTest[randomTravelNumber -1].toTown}
             </div>
 
           </div>
@@ -282,7 +283,7 @@ const TravelCard = () => {
 
           <h3>Tarif pour X voyageur :</h3>
           <div className='list-money-accepted'>
-            <ul className='money-type-info'>{randomTravelNumber && dataTravelTest[randomTravelNumber -1].prices.map((priceItem, index) => 
+            <ul className='money-type-info'>{randomTravelNumber && DataTest[randomTravelNumber -1].prices.map((priceItem, index) => 
             (priceItem.acceptance && <li key={index}>{priceItem.price + ' ' + priceItem.type}</li>))}
             </ul>
           </div>
