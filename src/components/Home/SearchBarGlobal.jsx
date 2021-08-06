@@ -1,9 +1,22 @@
-import React from 'react';
+import { useState } from 'react';
+
+import DataJourney from '../Data/DataJourney';
 
 import './Home.css';
 
 
 const SearchBarGlobal = () => {
+
+    const [Depart, setDepart] = useState([])
+    const [Arrive, setArrive] = useState([])
+    const [Transport, setTransport] = useState([])
+    const [Date, setDate] = useState([])
+    const [NbrT, setNbrT] = useState([])
+
+    function handleChange(e, setState) {
+        setState(e.target.value);
+    }
+
 
     return (
         <>
@@ -12,11 +25,12 @@ const SearchBarGlobal = () => {
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
-                    <select className="choiceDep">
+                    <select className="choiceDep"
+                        onChange={(e) => handleChange(e, setDepart)}>
                         <option disabled selected>Départ</option>
                         <option >Kaamelott</option>
                         <option >Versaille</option>
-                        <option >Montmiraille</option>
+                        <option >Montmirail</option>
                         <option >Fort Boyard</option>
                         <option >Carmelid</option>
                         <option >Edimbourg</option>
@@ -24,11 +38,12 @@ const SearchBarGlobal = () => {
                         <option >Westminster</option>
                         <option >Dublin</option>
                     </select>
-                    <select className="choice">
+                    <select className="choice"
+                        onChange={(e) => handleChange(e, setArrive)}>
                         <option disabled selected>Destination</option>
                         <option >Kaamelott</option>
                         <option >Versaille</option>
-                        <option >Montmiraille</option>
+                        <option >Montmirail</option>
                         <option >Fort Boyard</option>
                         <option >Carmelid</option>
                         <option >Edimbourg</option>
@@ -36,7 +51,8 @@ const SearchBarGlobal = () => {
                         <option >Westminster</option>
                         <option >Dublin</option>
                     </select>
-                    <select className="choice">
+                    <select className="choice"
+                        onChange={(e) => handleChange(e, setTransport)}>
                         <option disabled selected>Transport</option>
                         <option >À pied</option>
                         <option >À cheval</option>
@@ -44,8 +60,10 @@ const SearchBarGlobal = () => {
                         <option >Calèche</option>
                         <option >Carrosse</option>
                     </select>
-                    <input type="date" className="reservationDate"/>
-                    <select className="choice">
+                    <input type="date" className="reservationDate"
+                        onChange={(e) => handleChange(e, setDate)} />
+                    <select className="choice"
+                        onChange={(e) => handleChange(e, setNbrT)}>
                         <option disabled selected>Nombre de gueux</option>
                         <option >1 paysans</option>
                         <option >2 pequeux</option>
