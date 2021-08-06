@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+import Trajet from "./components/Trajet/Trajet";
+
 import React from 'react';
 
 import Home from './components/Home/Home';

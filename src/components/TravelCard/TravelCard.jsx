@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './TravelCard.css'
+import DataUser from '../Data/Data'
 
 const TravelCard = () => {
 
@@ -203,6 +204,7 @@ const TravelCard = () => {
       ]
     }
   ]
+  
 
   const [randomTravelNumber, setRandomTravelNumber] = useState()
 
@@ -290,22 +292,22 @@ const TravelCard = () => {
         <div className='info-sub-container'>
 
           <div className='info-transport'>
-          <h4>Moyen de transport :</h4>
-            {dataProfilTest.transportType}
+            <h4>Moyen de transport :</h4>
+            <p>{DataUser[0].transport}</p>
           </div>
 
           <div className='info-user'>
 
             <div className='info-user-photo'>
-              {dataProfilTest.pictures}
+              <img src={DataUser[0].picture} alt="user face" />
             </div>
 
             <div className='info-user-name'>
-            {dataProfilTest.name}
+              {DataUser[0].name}
             </div>
 
             <div className='info-user-hygiene'>
-              {dataProfilTest.hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>Dernier bain il y a ${dataProfilTest.hygiene} mois</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>Dernier bain il y a ${dataProfilTest.hygiene} mois</p></>}
+              {DataUser[0].hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {dataProfilTest.hygiene} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {dataProfilTest.hygiene} mois)</p></>}
             </div>
 
           </div>
