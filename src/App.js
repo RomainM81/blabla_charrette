@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from 'react';
 
+import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import TravelCard from './components/TravelCard/TravelCard';
 import Trajet from './components/Trajet/Trajet';
@@ -14,10 +15,10 @@ function App() {
   return (
     <div>
       <Router>
-      <Navbar />
+        <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
           <Route path="/travel">
             <TravelCard />
@@ -26,13 +27,16 @@ function App() {
           <Route path="/user-profil/:Id" >
             <UserProfil />
           </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/search-result" component={SearchResult} />
           <Route path="/faq">
             <Faq />
           </Route>
         </Switch>
-    </Router>
-    </div>
+      </Router>
+    </div >
   );
 }
 
