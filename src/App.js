@@ -27,6 +27,9 @@ function App() {
             <UserProfil />
           </Route>
           <Route path="/search-result" component={SearchResult} />
+          <Route path="/faq">
+            <Faq />
+          </Route>
         </Switch>
     </Router>
     </div>

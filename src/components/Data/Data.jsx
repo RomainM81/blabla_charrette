@@ -1,5 +1,11 @@
 import Perceval from '../../assets/Perceval.png'
 import Karadoc from '../../assets/Karadoc.png'
+import Guethenoc from '../../assets/Guethenoc1.jpg'
+import Tavernier from '../../assets/tavernier.jpg'
+import Guenièvre from '../../assets/Guenièvre.png'
+import Merlin from '../../assets/merlin.jpg'
+import Angarade from '../../assets/Angarade.png'
+
 const Data = [
     {
         id: 1,
@@ -7,6 +13,7 @@ const Data = [
         picture: Perceval,
         class:"Chevalier",
         hygiene:"Douteux",
+        hygiene_month : 6,
         transport:"Cheval",
         age: 40,
         sexe:"Homme",
@@ -25,10 +32,11 @@ const Data = [
     },
     {
         id: 2,
-        name:"Caradoc",
+        name:"Karadoc",
         picture: Karadoc,
         class:"Chevalier",
         hygiene:"Plus que douteux",
+        hygiene_month : 12,
         transport:"Cheval",
         age:"41",
         sexe:"Homme",
@@ -47,12 +55,13 @@ const Data = [
     },
     {
         id: 3,
-        name:"Abdou",
-        picture:"",
-        class:"Grouillot",
-        hygiene:"",
+        name:"Guethenoc",
+        picture: Guethenoc,
+        class:"Fermier",
+        hygiene:"Sent la fiente de bovin",
+        hygiene_month : 28,
         transport:"Pied",
-        age:"35",
+        age:"65",
         sexe:"Homme",
         payment: [
             {
@@ -62,17 +71,18 @@ const Data = [
             potato:true,
             carrot:true,
             butter:false,
-            salt:false,
-            bread:false
+            salt:true,
+            bread:true
         }
     ]
     },
     {
         id: 4,
-        name:"Sylvain",
-        picture:"",
+        name:"Le Tavarnier",
+        picture:Tavernier,
         class:"Tavernier",
-        hygiene:"",
+        hygiene:"Passable",
+        hygiene_month : 2,
         transport:"Ane",
         age:"31",
         sexe:"Homme",
@@ -91,10 +101,11 @@ const Data = [
     },
     {
         id: 5,
-        name:"Dorothée",
-        picture:"",
-        class:"Princesse",
-        hygiene:"",
+        name:"Guenièvre",
+        picture:Guenièvre,
+        class:"Reine",
+        hygiene:"Parfaite",
+        hygiene_month : 1,
         transport:"Carosse",
         age:"31",
         sexe:"Femme",
@@ -113,34 +124,13 @@ const Data = [
     },
     {
         id: 6,
-        name:"Ludivine",
-        picture:"",
-        class:"Paysane",
-        hygiene:"",
-        transport:"Ane",
-        age:"31",
-        sexe:"Femme",
-        payment: [
-            {
-            gold_c:false,
-            silver_c:false,
-            bronze_c:true,
-            potato:true,
-            carrot:true,
-            butter:true,
-            salt:true,
-            bread:true
-        }
-    ]
-    },
-    {
-        id: 7,
-        name:"Loghan",
-        picture:"",
-        class:"Troubadour",
-        hygiene:"",
-        transport:"Pied",
-        age:"31",
+        name:"Merlin",
+        picture: Merlin,
+        class:"Enchanteur",
+        hygiene:"Correct",
+        hygiene_month : 2,
+        transport:"Charrette",
+        age:"884",
         sexe:"Homme",
         payment: [
             {
@@ -150,8 +140,31 @@ const Data = [
             potato:false,
             carrot:false,
             butter:false,
-            salt:false,
-            bread:false
+            salt:true,
+            bread:true
+        }
+    ]
+    },
+    {
+        id: 7,
+        name:"Angarade",
+        picture: Angarade,
+        class:"Servante",
+        hygiene:"Passable",
+        hygiene_month : 2,
+        transport:"Pied",
+        age:"28",
+        sexe:"Femme",
+        payment: [
+            {
+            gold_c:false,
+            silver_c:false,
+            bronze_c:true,
+            potato:true,
+            carrot:true,
+            butter:false,
+            salt:true,
+            bread:true
         }
     ]
     },
