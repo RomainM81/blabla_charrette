@@ -1,7 +1,4 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
-import Trajet from "./components/Trajet/Trajet";
-
 import React from 'react';
 
 import Home from './components/Home/Home';
@@ -11,7 +8,6 @@ import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
-
 
 function App() {
   return (
