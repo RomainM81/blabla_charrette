@@ -7,7 +7,7 @@ const TravelCard = () => {
   const lieuxInOneMinute = 0.0207124;
   let travelDuration
 
-  /*const dataProfilTest = {
+  const dataProfilTest = {
     id: 1,
     name: 'Roparz',
     pictures: '...',
@@ -204,7 +204,7 @@ const TravelCard = () => {
       ]
     }
   ]
-  */
+  
 
   const [randomTravelNumber, setRandomTravelNumber] = useState()
 

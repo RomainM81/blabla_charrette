@@ -4,7 +4,6 @@ import Trajet from "./components/Trajet/Trajet";
 
 import React from 'react';
 
-
 import Home from './components/Home/Home';
 import TravelCard from './components/TravelCard/TravelCard';
 //import Trajet from './components/Trajet/Trajet';
@@ -17,10 +16,11 @@ import './App.css';
 function App() {
   return (
     <div>
+      <Navbar />
       <Router>
       <Navbar />
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home/>
           </Route>
           <Route path="/travel">
