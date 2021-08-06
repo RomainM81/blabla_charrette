@@ -1,20 +1,25 @@
 import { useState } from 'react';
-
-import DataJourney from '../Data/DataJourney';
+import { NavLink } from 'react-router-dom';
 
 import './Home.css';
 
 
 const SearchBarGlobal = () => {
 
-    const [Depart, setDepart] = useState([])
-    const [Arrive, setArrive] = useState([])
-    const [Transport, setTransport] = useState([])
-    const [Date, setDate] = useState([])
-    const [NbrT, setNbrT] = useState([])
+    const [state, setState] = useState({
+        depart: "",
+        arrive: "",
+        transport: "",
+        date: "",
+        nombre: ""
+    })
 
-    function handleChange(e, setState) {
-        setState(e.target.value);
+    const handleChange = (e) => {
+        setState({ ...state, [e.target.name]: e.target.value });
+    }
+
+    const handleClick = () => {
+
     }
 
 
@@ -25,8 +30,8 @@ const SearchBarGlobal = () => {
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
-                    <select className="choiceDep"
-                        onChange={(e) => handleChange(e, setDepart)}>
+                    <select className="choiceDep" name="depart"
+                        onChange={(e) => handleChange(e)}>
                         <option disabled selected>Départ</option>
                         <option >Kaamelott</option>
                         <option >Versaille</option>
@@ -38,8 +43,8 @@ const SearchBarGlobal = () => {
                         <option >Westminster</option>
                         <option >Dublin</option>
                     </select>
-                    <select className="choice"
-                        onChange={(e) => handleChange(e, setArrive)}>
+                    <select className="choice" name="arrive"
+                        onChange={(e) => handleChange(e)}>
                         <option disabled selected>Destination</option>
                         <option >Kaamelott</option>
                         <option >Versaille</option>
@@ -51,8 +56,8 @@ const SearchBarGlobal = () => {
                         <option >Westminster</option>
                         <option >Dublin</option>
                     </select>
-                    <select className="choice"
-                        onChange={(e) => handleChange(e, setTransport)}>
+                    <select className="choice" name="transport"
+                        onChange={(e) => handleChange(e)}>
                         <option disabled selected>Transport</option>
                         <option >À pied</option>
                         <option >À cheval</option>
@@ -60,10 +65,10 @@ const SearchBarGlobal = () => {
                         <option >Calèche</option>
                         <option >Carrosse</option>
                     </select>
-                    <input type="date" className="reservationDate"
-                        onChange={(e) => handleChange(e, setDate)} />
-                    <select className="choice"
-                        onChange={(e) => handleChange(e, setNbrT)}>
+                    <input type="date" className="reservationDate" name="date"
+                        onChange={(e) => handleChange(e)} />
+                    <select className="choice" name="nombre"
+                        onChange={(e) => handleChange(e)}>
                         <option disabled selected>Nombre de gueux</option>
                         <option >1 paysans</option>
                         <option >2 pequeux</option>
@@ -73,10 +78,12 @@ const SearchBarGlobal = () => {
                         <option >6 hérétiques</option>
                         <option >+ de 6 hérétiques</option>
                     </select>
-                    <button className="logoSearch"><i className="fas fa-search"></i></button>
+                    <NavLink to={{path:'/search-result', state: state}} className="NavL">
+                        <button className="logoSearch" onClick={handleClick}><i className="fas fa-search"></i></button>
+                    </NavLink>
                 </div>
             </div>
-                <h2 className="slogan" >BlablaCharrette aucun lieu de vous arrête !</h2>
+                <h2 className="slogan" >BlablaCharrette aucun lieu ne vous arrête !</h2>
                 <div className="color-change-2x"></div>
         </>
     );
