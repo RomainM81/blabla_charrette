@@ -11,12 +11,12 @@ import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
+import SearchResult from "./components/SearchResult/SearchResult";
 
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
       <Navbar />
         <Switch>
@@ -29,6 +29,9 @@ function App() {
           {/* <Route path="/post-trajet" component={Trajet} /> */}
           <Route path="/user-profil/:Id" >
             <UserProfil />
+          </Route>
+          <Route path="/search-result">
+            <SearchResult />
           </Route>
         </Switch>
     </Router>
