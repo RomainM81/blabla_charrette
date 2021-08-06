@@ -31,7 +31,7 @@ const TravelCard = (props) => {
 
   return (
     <div className='TravelCard'>
-      <h3>{date}</h3>
+      <h3>Trajet pour le {date}</h3>
 
       <div className='info-travel-container'>
 
@@ -104,7 +104,7 @@ const TravelCard = (props) => {
             </div>
 
             <div className='info-user-hygiene'>
-              {DataUser[iduser].hygiene_month <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></>}
+              {DataUser[iduser].hygiene_month <= 3 ? <><h4>&#9989;&nbsp; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></> : <><h4>&#10060;&nbsp; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></>}
             </div>
           </div>
 

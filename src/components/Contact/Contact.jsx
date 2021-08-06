@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="contact">
             <h2>Pour plus d'information,</h2>
             <h2>contactez Abdou,</h2>
-            <h2>il est sur le retour... &#127939; <span onClick={() => setAbdou(true)}>&#128660;</span></h2>
+            <h2>il est sur le retour... &#127939; <span className='contact-button' onClick={() => setAbdou(true)}>&#128660;</span></h2>
 
             <img src="https://media.giphy.com/media/sUt8uDIusftiE/giphy.gif" alt="" />
             <img src="https://media.giphy.com/media/ntxtuZ2NDW2uQ/giphy.gif" alt="" />

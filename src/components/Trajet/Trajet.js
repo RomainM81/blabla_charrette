@@ -77,9 +77,8 @@ function Trajet () {
                 <option>6 hérétiques</option>
                 <option>+ de 6 hérétiques</option>
                 </select><br/><br/>
-                <Link to={{pathname:'/search-result', showDetail: showDetail}} className="button-confirm">
-                    <button className="">Tu confirmes ?</button>
-                </Link>
+                <button className="" onClick={(e) => e.preventDefault()}>Tu confirmes ?</button>
+                
             </div>
                 <div className="gif">
                     <img src="https://media.giphy.com/media/Oq4GgLCt4yqoU/giphy.gif" className="gif-gif"></img>

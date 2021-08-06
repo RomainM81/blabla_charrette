@@ -10,3 +10,7 @@
         box-shadow: 12px 12px 2px 1px #BE6553;
         margin: 30px;
 }
+
+.contact .contact-button {
+  cursor: pointer;
+}
