@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import parchemin from '../../assets/paper.jpg';
 import './Trajet.css';
@@ -6,14 +7,24 @@ import './Trajet.css';
 
 
 function Trajet () {
-    const [showDetail, setShowDetail]= useState()
+    const [showDetail, setShowDetail]= useState({
+        depart:"",
+        arrive:"",
+        transport:"",
+        date:"",
+        number:"",
+    })
+
+    const handeChange= (e) => {
+        setShowDetail({...showDetail, [e.target.name]: e.target.value })
+    }
     return (
     <form className="formContainer">
         <img src={parchemin} alt="parchemin" />
         <div className="formContent">
-                <h2>Où allez-vous glairer?</h2>
+                <h2>Où tu veux glairer?</h2>
             <div className="formItems">
-            <select className="input" type="text" placeholder="lieu de départ" required>
+            <select className="input" name="depart" onChange={(e) => handeChange(e)}>
                 <option disabled selected>tu par dou?</option>
                 <option>Kaamelot</option>
                 <option>Fort Boyard</option>
@@ -28,7 +39,7 @@ function Trajet () {
             </select>
             </div>
             <div className="formItems">
-            <select className="input" type="text" placeholder="destination" required>
+            <select className="input" name="arrive" onChange={(e) => handeChange(e)}>
                 <option disabled selected>tu ve aller ou?</option>
                 <option>Kaamelot</option>
                 <option>Fort Boyard</option>
@@ -43,7 +54,7 @@ function Trajet () {
             </select>           
             </div>
             <div className="formItems">
-            <select className="input" type="text" placeholder="type de transport" required>
+            <select className="input" name="transport" onChange={(e) => handeChange(e)}>
                 <option disabled selected>comment ty va?</option>
                 <option>A pied</option>
                 <option>En chariotte</option>
@@ -53,11 +64,11 @@ function Trajet () {
             </select>       
             </div>
             <div className="formItems">
-            <input type="date" id="reservation-date" />      
+            <input type="date" className="input" name="date" onChange={(e) => handeChange(e)} />      
             </div>
-            <div className="formItems">
-            <select className="input" type="text" placeholder="nombre de passager" required>
-                <option disabled selected>tu a dla place?</option>
+            <div className="form-form">
+            <select className="input" name="number" onChange={(e) => handeChange(e)}>
+                <option disabled selected>ta dla place?</option>
                 <option>1 paysan</option>
                 <option>2 pequeux</option>
                 <option>3 peqneaux</option>
@@ -66,9 +77,13 @@ function Trajet () {
                 <option>6 hérétiques</option>
                 <option>+ de 6 hérétiques</option>
                 </select><br/><br/>
-                <button onClick={(event) => setShowDetail(event.target.value)}>Confirmer</button>
-                {console.log(setShowDetail)}
+                <Link to={{pathname:'/search-result', showDetail: showDetail}} className="button-confirm">
+                    <button className="">Tu confirmes ?</button>
+                </Link>
             </div>
+                <div className="gif">
+                    <img src="https://media.giphy.com/media/Oq4GgLCt4yqoU/giphy.gif" className="gif-gif"></img>
+                </div> 
         </div>
     </form>
     )

@@ -1,23 +1,27 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from 'react';
 
+
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import TravelCard from './components/TravelCard/TravelCard';
 import Trajet from './components/Trajet/Trajet';
 import Navbar from './components/Navbar/Navbar';
+import SearchResult from "./components/SearchResult/SearchResult";
+import Trajet from "./components/Trajet/Trajet";
+import TravelCard from './components/TravelCard/TravelCard';
 import UserProfil from './components/UserProfil/UserProfil';
 import Faq from './components/Faq/Faq';
 
 import './App.css';
-import SearchResult from "./components/SearchResult/SearchResult";
 
 function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+        <Navbar/>
         <Switch>
+          <Route path="/post_trajet" component={Trajet} />
           <Route exact path="/">
             <Home />
           </Route>

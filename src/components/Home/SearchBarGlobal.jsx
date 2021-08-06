@@ -18,7 +18,6 @@ const SearchBarGlobal = () => {
         setState({ ...state, [e.target.name]: e.target.value });
     }
 
-
     return (
         <>
             <p className="infoSanitaire">
