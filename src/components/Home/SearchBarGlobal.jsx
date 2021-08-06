@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 
@@ -18,12 +18,10 @@ const SearchBarGlobal = () => {
         setState({ ...state, [e.target.name]: e.target.value });
     }
 
-    
-
     return (
         <>
             <p className="infoSanitaire">
-                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre FAQ.
+                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre <Link to="/faq" className="NavL">FAQ.</Link>
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
@@ -80,7 +78,7 @@ const SearchBarGlobal = () => {
                     </Link>
                 </div>
             </div>
-                <h2 className="slogan" >BlablaCharrette aucun lieu ne vous arrête !</h2>
+                <h2 className="slogan" >BlablaCharrette, aucun lieu ne vous arrête !</h2>
                 <div className="color-change-2x"></div>
         </>
     );
