@@ -76,7 +76,8 @@ const SearchBarGlobal = () => {
                     <button className="logoSearch"><i className="fas fa-search"></i></button>
                 </div>
             </div>
-
+                <h2 className="slogan" >BlablaCharrette aucun lieu de vous arrête !</h2>
+                <div className="color-change-2x"></div>
         </>
     );
 }
