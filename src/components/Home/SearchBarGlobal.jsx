@@ -22,7 +22,7 @@ const SearchBarGlobal = () => {
     return (
         <>
             <p className="infoSanitaire">
-                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre FAQ.
+                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre <Link to="/faq" className="NavL">FAQ.</Link>
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
