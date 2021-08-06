@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
+import SearchResult from "./components/SearchResult/SearchResult";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/user-profil/:Id" >
             <UserProfil />
           </Route>
+          <Route path="/search-result" component={SearchResult} />
         </Switch>
     </Router>
     </div>
