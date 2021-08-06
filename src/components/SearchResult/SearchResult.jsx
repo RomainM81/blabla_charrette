@@ -1,20 +1,15 @@
 import SearchCard from "../SearchCard/SearchCard"
+import DataJourney from "../Data/DataJourney"
 
 const SearchResult = (props) => {
-  
-  const tabTest = [
-    {name:'prout1'},
-    {name:'prout2'},
-    {name: 'prout3'},
-    {name: 'prout4'},
-    {name: 'prout5'}]
 
+    console.log({props})
   return (
     <div className="SearchResult">
       <h2>Resultats de votre recherche :</h2>
-      <h4>{props.date}</h4>
-      <p>{props.departure} <i class="fas fa-arrow-right"></i> {props.arrival}</p>
-      {tabTest.map((element) => <SearchCard name={element.name} />)}
+      <h4>{props.location.state.date}</h4>
+      <p>{props.location.state.depart} <i class="fas fa-arrow-right"></i> {props.location.state.arrive}</p>
+      {DataJourney.filter((element) => element.fromTown === props.location.state.depart).map((element, index) => <SearchCard key={index} {...element} />)}
       
     </div>
   )

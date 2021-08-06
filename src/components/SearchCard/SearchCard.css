@@ -1,8 +1,9 @@
 .SearchCard {
   width: 60vw;
-  height: 10vh;
+  min-height: 25vh;
   margin: 20px;
+  padding: 20px;
   background: url('../../assets/parchemin2.jpg') center / cover;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 5px black;
 }

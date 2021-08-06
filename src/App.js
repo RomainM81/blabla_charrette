@@ -30,9 +30,7 @@ function App() {
           <Route path="/user-profil/:Id" >
             <UserProfil />
           </Route>
-          <Route path="/search-result">
-            <SearchResult />
-          </Route>
+          <Route path="/search-result" component={SearchResult} />
         </Switch>
     </Router>
     </div>
