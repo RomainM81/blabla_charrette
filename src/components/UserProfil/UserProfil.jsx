@@ -20,30 +20,30 @@ const UserProfil = () => {
                         <div className="PayListUS">
                             <div>
                                 <li>
-                                    <p>{Data[Id].payment[0].gold_c ? <> &#9989; </> : <> &#10060; </>} Pièce d'or</p>
+                                    <p>{Data[Id].payment[0].gold_c ? <> &#9989; </> : <> &#10060; </>} &nbsp;Pièce d'or</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].silver_c ? <> &#9989; </> : <> &#10060; </>} Pièce d'argent</p>
+                                    <p>{Data[Id].payment[0].silver_c ? <> &#9989; </> : <> &#10060; </>} &nbsp;Pièce d'argent</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].bronze_c ? <> &#9989; </> : <> &#10060; </>} Pièce de bronze</p>
+                                    <p>{Data[Id].payment[0].bronze_c ? <> &#9989; </> : <> &#10060; </>} &nbsp;Pièce de bronze</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].potato ? <> &#9989; </> : <> &#10060; </>} Patate</p>
+                                    <p>{Data[Id].payment[0].potato ? <> &#9989; </> : <> &#10060; </>} &nbsp;Patate</p>
                                 </li>
                             </div>
                             <div className="PayListUS2">
                                 <li>
-                                    <p>{Data[Id].payment[0].carrot ? <> &#9989; </> : <> &#10060; </>} Carotte</p>
+                                    <p>{Data[Id].payment[0].carrot ? <> &#9989; </> : <> &#10060; </>} &nbsp;Carotte</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].butter ? <> &#9989; </> : <> &#10060; </>} Beurre</p>
+                                    <p>{Data[Id].payment[0].butter ? <> &#9989; </> : <> &#10060; </>} &nbsp;Beurre</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].salt ? <> &#9989; </> : <> &#10060; </>} Sel</p>
+                                    <p>{Data[Id].payment[0].salt ? <> &#9989; </> : <> &#10060; </>} &nbsp;Sel</p>
                                 </li>
                                 <li>
-                                    <p>{Data[Id].payment[0].bread ? <> &#9989; </> : <> &#10060; </>} Pain</p>
+                                    <p>{Data[Id].payment[0].bread ? <> &#9989; </> : <> &#10060; </>} &nbsp;Pain</p>
                                 </li>
                             </div>
                         </div>
