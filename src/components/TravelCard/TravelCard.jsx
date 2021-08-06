@@ -3,6 +3,7 @@ import './TravelCard.css'
 import DataUser from '../Data/Data'
 import DataJourney from '../Data/DataJourney'
 import { useParams } from 'react-router'
+import { NavLink } from 'react-router-dom'
 
 const TravelCard = (props) => {
 
@@ -75,7 +76,7 @@ const TravelCard = (props) => {
 
         <div className='info-price'>
 
-          <h3>Tarif pour {nombre} voyageur :</h3>
+          <h3>Tarif pour {nombre} :</h3>
           <div className='list-money-accepted'>
             <ul className='money-type-info'>{DataJourney[idToUse].prices.map((priceItem, index) => 
             (priceItem.acceptance && <li key={index}>{priceItem.price + ' ' + priceItem.type}</li>))}
@@ -92,19 +93,19 @@ const TravelCard = (props) => {
           </div>
 
           <div className='info-user'>
-
-            <div className='info-user-photo'>
-              <img src={DataUser[iduser].picture} alt="user face" />
-            </div>
+            <NavLink to={`/user-profil/${iduser}`}>
+              <div className='info-user-photo'>
+                <img src={DataUser[iduser].picture} alt="user face" />
+              </div>
+            </NavLink>
 
             <div className='info-user-name'>
               {DataUser[iduser].name}
             </div>
 
             <div className='info-user-hygiene'>
-              {DataUser[iduser].hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene} mois)</p></>}
+              {DataUser[iduser].hygiene_month <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene_month} mois)</p></>}
             </div>
-
           </div>
 
         </div>

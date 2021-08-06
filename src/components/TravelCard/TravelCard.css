@@ -18,7 +18,6 @@
   min-height: 100vh;
 }
 
-
 .info-trajet-container {
   font-size: 1.5em;
   font-weight: bold;
@@ -108,6 +107,7 @@
 
 .info-user-photo {
   width: 150px;
+  margin: 0 auto;
 }
 
 .info-user-photo img {
@@ -121,6 +121,7 @@
 }
 
 .info-user-hygiene p {
+  font-weight: bold;
   color: var(--third-color);
 }
 
