@@ -74,13 +74,13 @@ const SearchBarGlobal = () => {
                         <option >6 hérétiques</option>
                         <option >+ de 6 hérétiques</option>
                     </select>
-                    <Link to={{pathname:'/search-result', state: state}} className="NavL">
+                    <Link to={{ pathname: '/search-result', state: state }} className="NavL">
                         <button className="logoSearch"><i className="fas fa-search"></i></button>
                     </Link>
                 </div>
             </div>
-                <h2 className="slogan" >BlablaCharrette aucun lieu ne vous arrête !</h2>
-                <div className="color-change-2x"></div>
+            <h2 className="slogan" >BlablaCharrette, aucun lieu ne vous arrête !</h2>
+            <div className="color-change-2x"></div>
         </>
     );
 }

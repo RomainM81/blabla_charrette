@@ -6,14 +6,14 @@ const Faq = () => {
     return (
         <div>
             <div className="bloc">
-                <h2 className="titleFaq">Peste noire : la foires aux questions</h2>
+                <h2 className="titleFaq">Peste noire : la foire aux questions</h2>
                 <img src={merlin} alt="merlin" />
             </div>
             <div className="blocFaq">
                 <div>
                     <h3><i class="em em-biohazard_sign"></i> Utilisation du Pass Sanitaire</h3>
-                    <p>Oyé oyé braves gens ! Un nouveau texte de loi vient d'êtrez voté. Chacun devra dorénavent recevoir 10 vaccins en 1 mois 
-                        pour obtenir le Pass Sanitaire. Sans ça, pas de voyage. Mais ne vous inquiétez pas, nous avons négocier un prix exeptionnel
+                    <p>Oyé oyé braves gens ! Un nouveau texte de loi vient d'êtrez voté. Chacun devra dorénavent recevoir 10 vaccins en 1 mois
+                    pour obtenir le Pass Sanitaire. Sans ça, pas de voyage. Mais ne vous inquiétez pas, nous avons négocier un prix exeptionnel
                         juste pour vous à 500 po le vaccin. Et si vous n'avez pas d'argent, tant pi pour vous, il faudra rester chez vous.</p>
                 </div>
                 <div>
@@ -25,7 +25,7 @@ const Faq = () => {
                     sont délivrés très tôt, car le délai d’incubation de la maladie est généralement rapide. </p>
                 </div>
                 <div>
-                    <h3>Quels sont les types de peste ?</h3>
+                    <h3>Quels sont les types de pestes ?</h3>
                     <p>Il y a trois formes de peste, selon l’itinéraire de l’infection : bubonique, septicémique et
                     pulmonaire. Toutes les formes sont guérissables si elles sont détectées à temps.</p>
                     <p><i class="em em-rotating_light"></i> <strong>La peste bubonique</strong> (connue en Europe médiévale comme la « Peste Noire ») est la forme la
