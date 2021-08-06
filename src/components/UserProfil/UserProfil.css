@@ -1,0 +1,41 @@
+.UserP {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.FlexContainerUP {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40vh; 
+}
+
+.UserP h2 {
+    color : var(--primary-color);
+    text-align: center;
+    
+}
+
+.FlexContainerUP h3 {
+    color : var(--primary-color);
+    margin: 8px;
+}
+
+.FlexContainerUP p {
+    color: var(--third-color);
+    margin: 5px;
+}
+
+.FlexContainerUP ul {
+    background-color: var(--bg-color);
+    list-style-type: none;
+    margin: 2px;
+}
+
+.ImgUS {
+    width: 35vh;
+    height: 50vh;
+}
+
+.PayListUS {
+    display: flex;
+}
