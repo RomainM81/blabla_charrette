@@ -1,6 +1,6 @@
 import Perceval from '../../assets/Perceval.png'
 import Karadoc from '../../assets/Karadoc.png'
-import Guethenoc from '../../assets/Guethenoc1.jpg'
+import Guethenoc from '../../assets/Guethenoc2.jpg'
 import Tavernier from '../../assets/tavernier.jpg'
 import Guenièvre from '../../assets/Guenièvre.png'
 import Merlin from '../../assets/merlin.jpg'
