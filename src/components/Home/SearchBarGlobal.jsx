@@ -71,7 +71,7 @@ const SearchBarGlobal = () => {
                         <option >4 bouseux</option>
                         <option >5 pignoufs</option>
                         <option >6 hérétiques</option>
-                        <option >+ de 6 mécréants</option>
+                        <option >+ de 6 gueux</option>
                     </select>
                     <Link to={{pathname:'/search-result', state: state}} className="NavL">
                         <button className="logoSearch"><i className="fas fa-search"></i></button>

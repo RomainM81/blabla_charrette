@@ -14,7 +14,9 @@ const Navbar = () => {
 
             <div className="rightSide">
                 <div className="search">
+                  <NavLink to='/'>
                     <label className="icone" for="recherche">&#128270;</label>
+                  </NavLink>
                     <input id="recherche" type="text" placeholder="Rechercher" />
 
                     {/* <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" />
