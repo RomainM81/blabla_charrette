@@ -6,10 +6,9 @@ import { useParams } from 'react-router'
 
 const TravelCard = (props) => {
 
-  const { id, date, nombre } = useParams()
+  const { id, date, nombre, iduser } = useParams()
   
   const idToUse = id - 1;
-  let randomUser
 
   const lieuxInOneMinute = 0.0207124;
   let travelDuration
@@ -28,12 +27,6 @@ const TravelCard = (props) => {
     let arrivalTime = `(+${days}j) ${hoursRest}:${minutes}`
    return arrivalTime
   }
-
-  const getRandomUser = () => {
-    return Math.floor(Math.random() * DataUser.length)
-  }
-
-  randomUser = getRandomUser()
 
   return (
     <div className='TravelCard'>
@@ -95,21 +88,21 @@ const TravelCard = (props) => {
 
           <div className='info-transport'>
             <h4>Moyen de transport :</h4>
-            <p>{DataUser[randomUser].transport}</p>
+            <p>{DataUser[iduser].transport}</p>
           </div>
 
           <div className='info-user'>
 
             <div className='info-user-photo'>
-              <img src={DataUser[randomUser].picture} alt="user face" />
+              <img src={DataUser[iduser].picture} alt="user face" />
             </div>
 
             <div className='info-user-name'>
-              {DataUser[randomUser].name}
+              {DataUser[iduser].name}
             </div>
 
             <div className='info-user-hygiene'>
-              {DataUser[randomUser].hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[randomUser].hygiene} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[randomUser].hygiene} mois)</p></>}
+              {DataUser[iduser].hygiene <= 3 ? <><h4>&#9989; Hygiène certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene} mois)</p></> : <><h4>&#10060; Hygiène non certifiée</h4><p>(Dernier bain il y a {DataUser[iduser].hygiene} mois)</p></>}
             </div>
 
           </div>

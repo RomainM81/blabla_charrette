@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/travel/:id/:date/:nombre">
+          <Route path="/travel/:id/:date/:nombre/:iduser">
             <TravelCard />
           </Route>
           <Route path="/post-trajet" component={Trajet} />
