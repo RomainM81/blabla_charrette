@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0180848de9433b6be3010e3fcbf72c44f7a31dd
 import React from 'react';
 
 import Home from './components/Home/Home';
@@ -10,7 +13,6 @@ import UserProfil from './components/UserProfil/UserProfil';
 
 import './App.css';
 import SearchResult from "./components/SearchResult/SearchResult";
-
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
             <UserProfil />
           </Route>
           <Route path="/search-result" component={SearchResult} />
+          <Route path="/faq">
+            <Faq />
+          </Route>
         </Switch>
     </Router>
     </div>

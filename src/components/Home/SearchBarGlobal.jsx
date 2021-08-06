@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 import './Home.css';
 
@@ -18,15 +18,11 @@ const SearchBarGlobal = () => {
         setState({ ...state, [e.target.name]: e.target.value });
     }
 
-    const handleClick = () => {
-
-    }
-    console.log(state)
 
     return (
         <>
             <p className="infoSanitaire">
-                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre FAQ.
+                <i className="fas fa-exclamation-circle"></i> Peste noire et pass sanitaire : retrouvez les dernières infos sur notre <Link to="/faq" className="NavL">FAQ.</Link>
             </p>
             <div className="blocBanner">
                 <div className="blocBannerSearch">
