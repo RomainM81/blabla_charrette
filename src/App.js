@@ -16,7 +16,6 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
       <Navbar />
         <Switch>
