@@ -16,6 +16,8 @@ const Contact = () => {
             <img src="https://media.giphy.com/media/ntxtuZ2NDW2uQ/giphy.gif" alt="" />
             <img src="https://media.giphy.com/media/RYjnzPS8u0jAs/giphy.gif" alt="" />
 
+            <h3>La Bise les Gueux !</h3>
+
         </div>
 
 
